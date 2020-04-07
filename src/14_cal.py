@@ -46,8 +46,8 @@ if len(sys.argv) > 2:
 
 # if at least 1 additional argument is passed in, set month to the month argument
 if len(sys.argv) > 1:
-    year = int(sys.argv[1])
+    month = int(sys.argv[1])
 
 # initialize calendar and print the month
 c = calendar.TextCalendar(calendar.SUNDAY)
-c.prmonth(theyear=year, themonth=month)
+c.prmonth(themonth=month, theyear=year)
